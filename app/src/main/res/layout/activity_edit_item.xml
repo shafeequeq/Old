@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.codepath.simpletodo.EditItemActivity">
+
+    <TextView
+        android:text="@string/editItemTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/editItemTxtView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/editItemTxtView"
+        android:layout_alignLeft="@+id/editItemTxtView"
+        android:layout_alignStart="@+id/editItemTxtView"
+        android:layout_marginTop="25dp"
+        android:id="@+id/editItem" />
+
+    <Button
+        android:text="@string/editButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItem"
+        android:layout_alignLeft="@+id/editItem"
+        android:layout_alignStart="@+id/editItem"
+        android:layout_marginTop="36dp"
+        android:onClick="OnSave"
+        android:id="@+id/editItemButton" />
+</RelativeLayout>
